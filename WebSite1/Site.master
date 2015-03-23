@@ -1,0 +1,96 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 54px;
+            height: 75px;
+        }
+        .style2
+        {
+            width: 302px;
+        }
+        .style3
+        {
+            width: 302px;
+            height: 62px;
+        }
+        </style>
+</head>
+<body>
+<form id="Form1" runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                &nbsp;&nbsp;&nbsp;&nbsp; <font color=black>
+                    REDRESSAL OF GRIEVANCE&nbsp;&nbsp;
+                    </font>
+                </h1>
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color=black>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img class="style1" 
+                src="App_Data/satyameva%20jayate.jpg" /></font>
+                <div class="clear hideSkiplink">
+                
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" runat="server" 
+                        EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Home"/>
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="About"/>
+                    </Items>
+                </asp:Menu>
+                    <asp:Button ID="Button1" runat="server" Text="Login" onclick="Button1_Click" />
+                
+            </div>
+        </div>
+        <div class="main">
+            <div style="float:left; width:30%;">
+                <table class="one" border="1" style="height: 314px; width: 250px" align="left">
+                    <tr>
+                        <td bgcolor="Red" class="style2">
+                            
+                        </td>
+                 
+                    </tr>
+                    <tr>
+                        <br />
+
+                            <td align="center" valign="top" class="leftbutton"><a href="ORGANISATION_CHART.pdf" target="_blank">Organogram</a></td>
+                       
+                       
+                    </tr>
+                    <tr>
+                        <td align="center" valign="top" class="leftbutton"><a href="functions.pdf" target="_blank">Functions</a></td>
+                        
+                    </tr>
+                    <tr>
+                        <td align="center" valign="top" class="leftbutton"><a href="Circular_Order.asp">Related
+          Notification Circulars Grievances</a> </td>
+                       
+                    </tr>
+                    <tr>
+                        <td class="style3" >
+                            Row 3
+                        </td>
+                       
+                    </tr>
+                </table>
+                </div>
+                
+                 <div style="float:left; width:70%; text-align:right;">
+                 
+               <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                 </div>
+            </div>
+</div>
+</form>
+</body>
+</html>
